@@ -10,34 +10,105 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body { background-image: url(images/pattern-background-desktop.svg); }
+    body { 
+      background-image: url(images/pattern-background-desktop.svg); 
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      margin: 10% 0 0 25%;
+      background-color: white;
+      width: 50%;
+      height: 600px;
+      border-radius: 10%;
+    }
+    .card h1 {
+      padding-top: 15px;
+      text-align: center;
+    }
+    .plan-image {
+      width: 100%;
+      border-radius: 10% 10% 0 0;
+    }
+    .description {
+      color: gray;
+      text-align: center;
+      padding: 0 25px 10px 25px;
+    }
+    .plan {
+      background-color: hsl(225, 100%, 94%);
+      margin: 0 10% 0 10%;
+      border-radius: 10px;
+      display: inline-flex;
+      width: 80%;
+    }
+    .plan img {
+      padding-left: 10px;
+    }
+    .plan * {
+      padding-left: 30px;
+      text-align: center;
+    }
+    .plan a {
+      padding-top: 25px;
+      color: hsl(245, 75%, 52%);
+    }
+    .plan a:hover {
+      color: hsl(245, 75%, 70%);;
+    }
+    .payment {
+      text-align: center;
+    }
+    .payment button {
+      margin: 20px 0 20px 0;
+      padding: 10px 75px 10px 75px;
+      font-size: 14px;
+      color: white;
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 10px;
+    }
+    .payment button:hover{
+      background-color: hsl(245, 75%, 60%);
+    }
+    .payment a {
+      color: gray;
+      text-decoration: none;
+    }
+    .payment a:hover {
+      color: black;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="image-header">
-    <img src="images/illustration-hero.svg">
-  </div>
+
+  <div class="card">
+
+    <img class="plan-image" src="images/illustration-hero.svg"/>
+
+    <h1>Order Summary</h1>
+
+    <div class="description">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </div>
+
+    <div class="plan">
+      <img src="images/icon-music.svg">
+      <p class="plan-information"><b>Annual Plan</b></br>$59.99/year</p>
+      <a href="#">Change</a></br>
+    </div>
+
+    <div class="payment">
+      <button class="payment-button">Proceed to Payment</button></br>
+      <a class="cancel-order" href="#">Cancel Order</a>
+    </div>
 
   </div>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniel Arán</a>.
   </div>
 </body>
 </html>
